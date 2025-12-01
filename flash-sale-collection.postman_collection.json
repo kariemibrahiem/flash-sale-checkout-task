@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "c0839af9-1ef3-4867-a6de-abc7e415f7c6",
+		"name": "flash-sale-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37128995"
+	},
+	"item": [
+		{
+			"name": "client",
+			"item": [
+				{
+					"name": "auth",
+					"item": [
+						{
+							"name": "cleint-login",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "cleint-login Copy",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "products",
+					"item": [
+						{
+							"name": "get-products",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer 3|ZK4VUfw4ZiW8S1MK7ndBkGLoBm06enCfRR4H4aEbf86dc5c4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}products",
+									"host": [
+										"{{url}}products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get-product-details",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer 3|ZK4VUfw4ZiW8S1MK7ndBkGLoBm06enCfRR4H4aEbf86dc5c4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}products/1",
+									"host": [
+										"{{url}}products"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "holds",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer 3|ZK4VUfw4ZiW8S1MK7ndBkGLoBm06enCfRR4H4aEbf86dc5c4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}products/1",
+									"host": [
+										"{{url}}products"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "orders",
+					"item": [
+						{
+							"name": "holds",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer 3|ZK4VUfw4ZiW8S1MK7ndBkGLoBm06enCfRR4H4aEbf86dc5c4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}products/1",
+									"host": [
+										"{{url}}products"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get-orders",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer 3|ZK4VUfw4ZiW8S1MK7ndBkGLoBm06enCfRR4H4aEbf86dc5c4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}products",
+									"host": [
+										"{{url}}products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "complete-order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer 3|ZK4VUfw4ZiW8S1MK7ndBkGLoBm06enCfRR4H4aEbf86dc5c4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}products",
+									"host": [
+										"{{url}}products"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "peyment",
+					"item": [
+						{
+							"name": "payment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer 3|ZK4VUfw4ZiW8S1MK7ndBkGLoBm06enCfRR4H4aEbf86dc5c4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}products/1",
+									"host": [
+										"{{url}}products"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1/api/"
+		}
+	]
+}
